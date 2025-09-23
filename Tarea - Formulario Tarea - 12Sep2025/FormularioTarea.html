@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>M&aacute;s Formularios</title>
+</head>
+<style>
+    /* Imagen a la derecha */
+    .imagen-derecha {
+      float: right;        /* la mantiene a la derecha */
+      max-width: 800px;    /* limita el tamaño */
+      height: auto;        /* conserva la proporción */
+      margin: 80px 100px 20px auto;
+      border-radius: 10px;
+    }
+  </style>
+<body>
+  <h1>Formulario Ayuda Ansiedad</h1>
+  <h3>Llene este formulario para acceder al portal.</h3>
+  <hr color="red">
+  <!-- Imagen a la derecha -->
+  <a href="https://www.diariofemenino.com/psicologia/ansiedad/" target="_blank"> 
+    <img src="amsi.jpg" alt="Imagen relacionada con ansiedad" class="imagen-derecha">
+  </a>
+  <form method="post" action="https://www.hiv.uw.edu/page/mental-health-screening/gad-7?">
+    <!-- Campos ocultos -->
+    <input type="hidden" name="destinatario" value="johanuriel7u7@hotmail.com">
+    <input type="hidden" name="asunto" value="Formulario de retroalimentaci&oacute;n">
+    <input type="hidden" name="redirigir" value="principal.html"> 
+    <!-- Nombre -->
+    <p>
+      <label>Nombre completo: 
+        <input name="nombre" type="text" size="40">
+      </label>
+    </p>
+    <!-- Edad -->
+    <p>
+      <label>Edad: 
+        <input name="edad" type="text" size="2">
+      </label>
+    </p>
+    <!-- Escolaridad -->
+    <p>
+      <label>Escolaridad: 
+        <input name="escolaridad" type="text" size="25">
+      </label>
+    </p>  
+    <!-- Gustos -->
+    <p>
+      <label>Pasatiempos: 
+        <input name="gustos" type="text" size="25">
+      </label>
+    </p>
+    <!-- Gustos -->
+    <p>
+      <label>Redes Sociales: 
+        <input name="gustos" type="text" size="25">
+      </label>
+    </p>    
+    <!-- Gustos -->
+    <p>
+      <label>Deportes favoritos: 
+        <input name="gustos" type="text" size="25">
+      </label>
+    </p>        
+    <!-- Gustos -->
+    <p>
+      <label>Correo Electronico: 
+        <input name="gustos" type="text" type="password" size="25">
+      </label>
+    </p>
+    <!-- Casillas de verificación -->
+    <p>
+      <strong>Porque llego a este sitio?:</strong><br>
+      <label>Quiero saber si tengo ansiedad
+        <input name="tengoansiedad" type="checkbox" value="Diseno"><br>
+      </label>
+      <label>Me pidieron realizar el test
+        <input name="peiddotest" type="checkbox" value="Vinculos"><br>
+      </label>
+      <label>Quiero saber el nivel de ansiedad que tengo
+        <input name="cosasgustaron" type="checkbox" value="Facilidad"><br>
+      </label> 
+      <label>Curiosidad
+        <input name="cosasgustaron" type="checkbox" value="Imagenes"><br>
+      </label>
+    </p>
+    <!-- Botones de opción -->
+    <p>
+      <strong>&iquest;C&oacute;mo lleg&oacute; a nuestro sitio?</strong><br>
+      <label>Motor de b&uacute;squeda
+        <input name="comositio" type="radio" value="motor busqueda"><br>
+      </label>
+      <label>V&iacute;nculos desde otro sitio
+        <input name="comositio" type="radio" value="vinculo"><br>
+      </label>
+      <label>Sitio web 
+        <input name="comositio" type="radio" value="formulario.com"><br>
+      </label>
+      <label>Referencia en un libro
+        <input name="comositio" type="radio" value="libro"><br>
+      </label>
+      <label>Otro
+        <input name="comositio" type="radio" value="otro"><br>
+      </label>
+    </p>
+    <!-- Lista desplegable -->
+    <p>
+      <label>Califique nuestro sitio: 
+        <select name="calificacion">
+          <option selected>Elige una opcion</option>
+          <option>10</option>
+          <option>9</option>
+          <option>8</option>
+          <option>7</option>
+          <option>6</option>
+          <option>5</option>
+          <option>4</option>
+          <option>3</option>
+          <option>2</option>
+          <option>1</option>
+          <option>Malo</option>
+        </select>
+      </label>
+    </p>
+    <!-- Comentario -->
+    <p>
+      <label>Comentario:<br>
+        <textarea name="comentario" rows="4" cols="36">Escribe aqu&iacute; los comentarios.</textarea>
+      </label>
+    </p>
+    <!-- Botones -->
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+    </p>   
+  </form>
+</body>
+</html>
